@@ -20,3 +20,11 @@ workflows:
       app_store_connect:
         auth: integration
         submit_to_testflight: true
+
+    - name: Clean and install pods
+  script: |
+    cd ios
+    rm -rf Pods Podfile.lock
+    pod install --repo-update
+    cd ..
+    
