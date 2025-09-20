@@ -9,6 +9,12 @@ workflows:
       xcode: latest
       cocoapods: default
     scripts:
+      - name: Clean and install pods
+        script: |
+          cd ios
+          rm -rf Pods Podfile.lock
+          pod install --repo-update
+          cd ..
       - name: Install dependencies
         script: flutter pub get
       - name: Build iOS release
@@ -20,11 +26,3 @@ workflows:
       app_store_connect:
         auth: integration
         submit_to_testflight: true
-
-    - name: Clean and install pods
-  script: |
-    cd ios
-    rm -rf Pods Podfile.lock
-    pod install --repo-update
-    cd ..
-    
