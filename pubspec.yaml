@@ -20,9 +20,8 @@ version: 1.0.7+2
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
- flutter:
-  platform:
-    ios: 14.0
+
+ 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
 # consider running `flutter pub upgrade --major-versions`. Alternatively,
