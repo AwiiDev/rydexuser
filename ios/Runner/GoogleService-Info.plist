@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.rydex.driver</string>
+	<string>com.rydex.driverapp</string>
 	<key>PROJECT_ID</key>
 	<string>awii-application</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,7 +25,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:933297774636:ios:4fbba5adba571aa502b189</string>
+	<string>1:933297774636:ios:35d7521b9d61c90502b189</string>
 	<key>DATABASE_URL</key>
 	<string>https://awii-application-default-rtdb.firebaseio.com</string>
 </dict>
