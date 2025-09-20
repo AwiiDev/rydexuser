@@ -11,6 +11,7 @@ workflows:
     scripts:
       - name: Clean and install pods
         script: |
+          flutter clean
           cd ios
           rm -rf Pods Podfile.lock
           pod install --repo-update
@@ -18,7 +19,7 @@ workflows:
       - name: Install dependencies
         script: flutter pub get
       - name: Build iOS release
-        script: flutter build ipa --release --no-codesign -t lib/env/main_dev.dart
+        script: flutter build ipa --release -t lib/env/main_dev.dart
     artifacts:
       - build/ios/ipa/*.ipa
       - flutter_drive.log
