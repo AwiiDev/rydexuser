@@ -2,14 +2,12 @@ workflows:
   ios-workflow:
     name: Build iOS App
     max_build_duration: 60
+    integrations:
+      app_store_connect: your_integration_id
     environment:
       flutter: stable
       xcode: latest
       cocoapods: default
-      vars:
-        APP_STORE_CONNECT_ISSUER_ID: Environnement
-        APP_STORE_CONNECT_KEY_IDENTIFIER: Environnement
-        APP_STORE_CONNECT_PRIVATE_KEY: Environnement
     scripts:
       - name: Install dependencies
         script: flutter pub get
