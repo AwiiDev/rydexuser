@@ -8,13 +8,13 @@ class AppConstants {
   static const String baseUrl = 'https://hicode.cloud/';
   static String firbaseApiKey = (Platform.isAndroid)
       ? "AIzaSyC1LYySHDu6jc1Fr0nKz4vYkgwqMEDJ7jk"
-      : "ios firebase api key";
+      : "AIzaSyAXtrM17ollsZ5sGJyHKOmA01ZDVbwlZlE";
   static String firebaseAppId =
-      (Platform.isAndroid) ? "1:933297774636:android:d9cf9147287659f602b189" : "ios firebase app id";
-  static String firebasemessagingSenderId = (Platform.isAndroid) ? "933297774636" : "ios firebase sender id";
+      (Platform.isAndroid) ? "1:933297774636:android:d9cf9147287659f602b189" : "1:933297774636:ios:35d7521b9d61c90502b189";
+  static String firebasemessagingSenderId = (Platform.isAndroid) ? "933297774636" : "933297774636";
   static String firebaseProjectId = (Platform.isAndroid)
       ? "awii-application"
-      : "ios firebase project id";
+      : "awii-application";
 
   static String mapKey =
       (Platform.isAndroid) ? "AIzaSyCnF9PoWAVtz12cW9EQPpXZg-8DrUBxx-o" : 'AIzaSyCnF9PoWAVtz12cW9EQPpXZg-8DrUBxx-o';
