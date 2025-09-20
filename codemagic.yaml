@@ -3,7 +3,7 @@ workflows:
     name: Build iOS App
     max_build_duration: 60
     integrations:
-      app_store_connect: your_integration_id
+      app_store_connect: e1875fec-0971-4868-bfb9-ff13d4e8dfab
     environment:
       flutter: stable
       xcode: latest
