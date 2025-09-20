@@ -8,6 +8,7 @@ workflows:
       flutter: stable
       xcode: latest
       cocoapods: default
+      xcode_team: PVSAAKDJC5
     scripts:
       - name: Clean and install pods
         script: |
